@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import Button from "./components/Button1";
+import Img from "./components/Img1";
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <div className="App-header">
+                <Button label="Hey Tesoro" />
+                <Img
+                    imageSrc="https://www.andreaminini.org/data/andreamininiorg/nc-trapezio-isoscele-esempio-am-2023-2.gif"
+                    altText="Non penso proprio"
+                />
+                <Img
+                    imageSrc="https://media.tenor.com/GPgVu42C8gUAAAAM/trapezio.gif"
+                    altText="Non penso proprio"
+                />
+                <Button label="Troppo Grosso" />
+            </div>
+        </div>
+    );
 }
 
 export default App;
